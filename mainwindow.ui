@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Library Management</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBoxLogin">
+      <property name="title">
+       <string>Login</string>
+      </property>
+      <layout class="QFormLayout" name="formLayoutLogin">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelLoginUsername">
+         <property name="text">
+          <string>Username:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditLoginUsername"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelLoginPassword">
+         <property name="text">
+          <string>Password:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditLoginPassword">
+         <property name="echoMode">
+          <enum>QLineEdit::EchoMode::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButtonLogin">
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonShowCreateAccount">
+      <property name="text">
+       <string>Create Account</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBoxCreateAccount">
+      <property name="title">
+       <string>Create Account</string>
+      </property>
+      <layout class="QFormLayout" name="formLayoutCreateAccount">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelFirstName">
+         <property name="text">
+          <string>First Name:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditFirstName"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelLastName">
+         <property name="text">
+          <string>Last Name:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditLastName"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelMobileNumber">
+         <property name="text">
+          <string>Mobile Number:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditMobileNumber"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelRole">
+         <property name="text">
+          <string>Role:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="comboBoxRole">
+         <item>
+          <property name="text">
+           <string>Librarian</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Borrower</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelCreateUsername">
+         <property name="text">
+          <string>Username:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEditUsername"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelCreatePassword">
+         <property name="text">
+          <string>Password:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEditPassword">
+         <property name="echoMode">
+          <enum>QLineEdit::EchoMode::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QPushButton" name="pushButtonCreateAccount">
+         <property name="text">
+          <string>Create Account</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBoxInsertBook">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="title">
+       <string>Insert Book</string>
+      </property>
+      <layout class="QFormLayout" name="formLayoutInsertBook">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelBookName">
+         <property name="text">
+          <string>Book Name:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditBookName"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelAvailability">
+         <property name="text">
+          <string>Availability:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="lineEditAvailability_2">
+         <item>
+          <property name="text">
+           <string>available</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>not available</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelPublisherId">
+         <property name="text">
+          <string>Publisher Name:</string>
+         </property>
+        </widget>
+       </item>
+      <item row="2" column="1">
+ <layout class="QVBoxLayout">
+  <item>
+   <widget class="QComboBox" name="comboBoxPublisher"/>
+  </item>
+  <item>
+   <widget class="QLineEdit" name="lineEditNewPublisher">
+    <property name="placeholderText">
+     <string>Enter new publisher</string>
+    </property>
+   </widget>
+  </item>
+ </layout>
+</item>
+
+ <item row="3" column="0">
+ <widget class="QLabel" name="labelAuthorFullName">
+  <property name="text">
+   <string>Author:</string>
+  </property>
+ </widget>
+</item>
+<item row="3" column="1">
+ <layout class="QVBoxLayout">
+  <item>
+   <widget class="QComboBox" name="comboBoxAuthor"/>
+  </item>
+  <item>
+   <layout class="QHBoxLayout">
+    <item>
+     <widget class="QLineEdit" name="lineEditNewAuthorFirst">
+      <property name="placeholderText">
+       <string>New First Name</string>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditNewAuthorLast">
+      <property name="placeholderText">
+       <string>New Last Name</string>
+      </property>
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </item>
+ </layout>
+</item>
+
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelCategoryId">
+         <property name="text">
+          <string>Category:</string>
+         </property>
+        </widget>
+       </item>
+      <item row="5" column="1">
+ <layout class="QVBoxLayout">
+  <item>
+   <widget class="QComboBox" name="comboBoxCategory"/>
+  </item>
+  <item>
+   <widget class="QLineEdit" name="lineEditNewCategory">
+    <property name="placeholderText">
+     <string>Enter new category</string>
+    </property>
+   </widget>
+  </item>
+ </layout>
+</item>
+       <item row="6" column="1">
+        <widget class="QPushButton" name="pushButtonInsert">
+         <property name="text">
+          <string>Insert Book</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonBorrow">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Borrow Book</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonViewBorrowed">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>View Borrowed Books</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QLineEdit" name="lineEditSearch">
+        <property name="placeholderText">
+         <string>Enter book name to search</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonSearch">
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonDeleteBook">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Delete Selected Book</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonDeleteUser">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Delete Selected User</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonViewUsers">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>View Users</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonEditBook">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Edit Book</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonEditUser">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Edit User</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonReviewBooks">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Review Books</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonReturnBook">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Return Book</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableViewBooks"/>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableViewUsers">
+      <property name="visible">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
